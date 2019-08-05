@@ -23,7 +23,7 @@ header::after{
 nav{
     float: right;
     margin-right: 35%;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 nav ul {
