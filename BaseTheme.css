@@ -5,31 +5,61 @@ body {
     padding: 0;
     background-color:blanchedalmond;
 }
-#container{
-    width: 100%;
-}
-#header{
-    padding: 0;
-    width: 100%;
+header{
     background-color: wheat;
-    height: 100px;
-    
 }
-#logoContainer{
-    padding-left: 15px;
+header::after{
+    content: '';
+    display: table;
+    clear: both;
 }
-#logo{
-    height:200px;
-    width: 200px;
+.logo {
     float: left;
-    margin-left: 0px;
+    height: 150px;
+    width: 200px;
 }
-#groundlayer{
-    width: 100%;
-    height: 50px;
-    background-color: brown;
+
+nav{
+    float: right;
+    margin-right: 35%;
+    margin-top: 100px;
 }
-#titleOfPage{
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    
+
+    position: relative;
+}
+nav ul a{
+
     color: black;
-    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:14px;
 }
+nav a:hover{
+    color: white;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: brown;
+
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%
+}
+    
